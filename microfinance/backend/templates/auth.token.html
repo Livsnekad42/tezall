@@ -1,0 +1,6 @@
+<script id="_user_app_t" type="text/javascript">
+    (function(){
+        const dataJson = {{ user_data|safe }};
+        localStorage.setItem('currentUser', JSON.stringify(dataJson));
+    })();
+</script>

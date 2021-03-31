@@ -1,0 +1,16 @@
+asgiref==3.2.10
+Django==3.1
+djangorestframework==3.11.1
+djangorestframework-jwt==1.11.0
+psycopg2==2.8.5
+PyJWT==1.7.1
+pytz==2020.1
+sqlparse==0.3.1
+requests==2.24.0
+httpx==0.16.1
+zeep==4.0.0
+uvicorn==0.13.4
+uvloop==0.15.2
+httptools==0.1.1
+gunicorn
+gevent

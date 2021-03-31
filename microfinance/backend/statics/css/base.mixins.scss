@@ -1,0 +1,70 @@
+// screen
+$_max__screen: 1024px;
+$_middle__screen: 768px;
+$_small__screen: 600px;
+
+@mixin ui__block {
+    padding: 17px 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+@mixin max_screen {
+    @media (min-width: $_max__screen){
+        @content;
+    }
+}
+@mixin middle_screen {
+    @media (min-width: $_small__screen) and (max-width: $_middle__screen){
+        @content;
+    }
+}
+@mixin small_screen {
+    @media (max-width: $_small__screen){
+        @content;
+    }
+}
+
+@mixin min__height {
+    @media (max-height: 450px) {
+        min-height: 140vh;
+        @content;
+    }
+}
+
+@mixin _450h {
+    @media (max-height: 450px) {
+        @content;
+    }
+}
+
+@mixin _979 {
+    @media (max-width: 979px){
+        @content;
+    }
+}
+@mixin _768 {
+    @media (min-width: 768px){
+        @content;
+    }
+}
+@mixin _600 {
+    @media (max-width: 600px){
+        @content;
+    }
+}
+@mixin _480 {
+    @media (max-width: 480px){
+        @content;
+    }
+}
+@mixin _350{
+    @media (max-width: 350px){
+        @content;
+    }
+}

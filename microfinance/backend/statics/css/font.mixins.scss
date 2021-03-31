@@ -1,0 +1,147 @@
+@import './font.scss';
+@import './variables.scss';
+
+@mixin large__text {
+    font: {
+        family: 'Futura New Book';
+        // size: 2em;
+        weight: bold;
+    }
+    line-height: 30px;
+    letter-spacing: 0.07em;
+    color: #fff;
+    @media all and (min-width:1024px) {
+        font-size: 2em;   
+    }
+    @media all and (max-width:1024px) {
+        font-size: 1.7em;   
+    }
+    @media all and (max-width:840px) {
+        font-size: 1.3em;   
+    }
+}
+
+@mixin large__text_grey {
+    font: {
+        family: 'Futura New Book';
+        size: 2em;
+    }
+    color: $textColor;
+}
+
+@mixin large__text_grey-surname {
+  font: {
+    family: 'Futura New Demi';
+    size: 40px;
+    weight: bold;
+  }
+  color: $textColor;
+}
+
+@mixin large__text_grey-money {
+  font: {
+    family: 'Futura New Heavy';
+    size: 40px;
+    weight: bold;
+  }
+  color: $textColor;
+}
+
+@mixin h2__loan-money {
+  font: {
+    family: 'Futura New Heavy';
+    size: 1.7rem;
+    weight: bold;
+  }
+  color: $textColor;
+}
+
+@mixin middle__text {
+    font: {
+        family: "Futura New Demi";
+        size: 1rem;
+    }
+    color: $textColor;
+    line-height: 36px;
+    letter-spacing: 0.16px;
+}
+
+@mixin middle__text_thin {
+  font: {
+    family: "Futura New Book";
+    size: 26px;
+  }
+  color: $textColor;
+  letter-spacing: 0.96px;
+}
+
+@mixin middle__text_white {
+  font: {
+    family: "Futura New Heavy";
+    size: 28px;
+  }
+  color: #fff;
+  line-height:33.6px;
+  letter-spacing: 0.16px;
+}
+
+@mixin middle__text_small {
+  font: {
+    family: "Futura New Book";
+    size: 24px;
+  }
+  color: #565656;
+  line-height:30px;
+  letter-spacing: 0.16px;
+}
+
+@mixin p__text {
+  font: {
+    family: "Futura New Book";
+    size: 21px;
+  }
+  color: $textColor;
+  line-height: 25.2px;
+}
+
+@mixin p__text_bold {
+  font: {
+    family: 'Futura New Heavy';
+    size: 1em;
+    weight: bold;
+  }
+  color: #fff;
+}
+
+@mixin p__text_white {
+  font: {
+    family: "Futura New Book";
+    size: 13px;
+  }
+  color: #fff;
+  line-height: 12px;
+}
+
+@mixin a__text {
+    font: {
+        family: 'Futura New Book';
+        size: 19px;
+    }
+    color: rgb(126, 126, 126);
+}
+
+@mixin a__text_hover {
+  font: {
+    family: 'Futura New Demi';
+    size: 19px;
+  }
+  color: #fff;
+}
+
+@mixin FuturaNewLight {
+  font: {
+    family: 'Futura New Light';
+    size: 1em;
+  }
+  color: rgb(128, 128, 128);
+}

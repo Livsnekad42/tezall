@@ -1,0 +1,34 @@
+@import "./base.mixins.scss";
+@import "./font.mixins.scss";
+
+// blocks
+.ui__block {
+    @include ui__block;
+}
+
+// form
+form {
+    @include ui__block;
+    // box-shadow: -2px -1px 5px 0px rgba(0,0,0,0.49);
+    padding: 0;
+    @include _768 {
+        padding: 17px 25px;
+    }
+}
+
+// button
+.btn {
+    background-color:#fff;
+    border: none;
+    color: rgb(61, 61, 61);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+    @include p__text;
+    z-index: 10;
+}
+
+
